@@ -1,10 +1,10 @@
 html, body {
     margin: 0; padding: 0;
     overflow-x: hidden; /* Убираем лишний горизонтальный скролл */
-    min-height: 100vh;  /* Гарантируем, что страница длиннее экрана */
-    padding-bottom: 8vh;
+    height: 100%  /* Гарантируем, что страница длиннее экрана */
 
 }
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -121,6 +121,16 @@ section, .partners_block {
 .footer-social a {
     text-decoration: none;
     font-size: clamp( 18px, 3vw, 25px);
-    color: black;
+    color: black;}
+
+.wrapper{
+    display: flex;
+    min-height:  100vh;
+    flex-direction: column;
 }
-.footer-social a:hover{ color: grey}
+footer {
+  margin-top: auto; /* сдвигает футер вниз, если мало контента */
+  background-color: #f0f0f0;
+
+  text-align: center;
+}
